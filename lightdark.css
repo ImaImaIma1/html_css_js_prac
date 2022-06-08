@@ -1,0 +1,48 @@
+:root {
+  --lightPurple: #9b72cf;
+  --white: #ffffff;
+  --darkPurple: #2f184b;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fontColor);
+  font-family: helvetica;
+}
+
+li {
+  list-style: circle;
+}
+
+.list {
+  list-style: square;
+}
+
+.btn {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+.light-theme {
+  color: #532b88;
+  background: #c8b1e4;
+}
+
+.light-theme {
+  --bg: var(--lightPurple);
+  --fontColor: var(--darkPurple);
+  --btnBg: var(--darkPurple);
+  --btnFontColor: var(--white);
+}
+.dark-theme {
+  --bg: var(--darkPurple);
+  --fontColor: var(--lightPurple);
+  --btnBg: var(--white);
+  --btnFontColor: var(--darkPurple);
+}
